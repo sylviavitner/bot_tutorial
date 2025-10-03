@@ -6,10 +6,6 @@ from dotenv import load_dotenv
 import os
 import random
 
-# enable message intents
-intents = discord.Intents.default()
-intents.message_content = True
-
 load_dotenv() # load .env file
 
 # create a client class
@@ -34,6 +30,8 @@ class Client(discord.Client):
             dice_roll = random.randint(1, 6)
             await message.channel.send(f'You rolled {dice_roll}.')
 
-# create a client instance and run your bot with your token!
+# enable intents and run the bot!
+intents = discord.Intents.default()
+intents.message_content = True
 client = Client(intents=intents)
 client.run(os.getenv('TOKEN'))
