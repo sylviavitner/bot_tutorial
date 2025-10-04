@@ -24,14 +24,16 @@ class Client(discord.Client):
 
         # respond based on a specific keyword in the message
         if "hello" in content:
-            await message.channel.send(f'Hello {message.author.name}!')
+            await message.channel.send(f'Hi {message.author.name}!')
         
         elif "roll dice" in content:
             dice_roll = random.randint(1, 6)
             await message.channel.send(f'You rolled {dice_roll}.')
 
-# enable intents and run the bot!
+# enable intents
 intents = discord.Intents.default()
 intents.message_content = True
+
+# run the bot!
 client = Client(intents=intents)
 client.run(os.getenv('TOKEN'))
