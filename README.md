@@ -52,7 +52,7 @@ TOKEN='your_unique_token_here'
 6. Test your bot on the Discord server you selected earlier.
 
 ## Useful links
-- [Discord.py Documentation]('https://discordpy.readthedocs.io/en/stable/')
-- [Discord.py Learning Guide]('https://www.pythondiscord.com/pages/guides/python-guides/discordpy/')
-- [Discord.py GitHub Repository]('https://github.com/Rapptz/discord.py')
+- [Discord.py Documentation](https://discordpy.readthedocs.io/en/stable/)
+- [Discord.py Learning Guide](https://www.pythondiscord.com/pages/guides/python-guides/discordpy/)
+- [Discord.py GitHub Repository](https://github.com/Rapptz/discord.py)
 
